@@ -1,0 +1,13 @@
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\bin\Release\netcoreapp3.1\backend.Helpers.deps.json
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\bin\Release\netcoreapp3.1\backend.Helpers.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\bin\Release\netcoreapp3.1\backend.Helpers.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\bin\Release\netcoreapp3.1\backend.Logging.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\bin\Release\netcoreapp3.1\backend.Logging.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.csproj.AssemblyReference.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.AssemblyInfoInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.AssemblyInfo.cs
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.csproj.CoreCompileInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.csproj.CopyComplete
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Helpers\obj\Release\netcoreapp3.1\backend.Helpers.pdb

@@ -1,0 +1,14 @@
+
+-- add the new columns, will need to be removed if the asxnet.defaults.sql gets updated to add the actual translations
+ALTER TABLE `tbpnametrivia` ADD COLUMN `Lang_DI` varchar(255) default NULL;
+ALTER TABLE `tbpnametrivia` ADD COLUMN `Lang_LK` varchar(255) default NULL;
+ALTER TABLE `tbwgtext` ADD COLUMN `Text_DI` longtext;
+ALTER TABLE `tbwgtext` ADD COLUMN `Text_LK` longtext;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

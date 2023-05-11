@@ -1,0 +1,1 @@
+varchar(255) DEFAULT NULL

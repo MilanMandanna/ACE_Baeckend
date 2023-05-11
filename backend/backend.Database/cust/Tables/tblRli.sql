@@ -1,0 +1,9 @@
+﻿CREATE TABLE [cust].[tblRli]
+(
+	[RLIID] int NOT NULL IDENTITY (1, 1),
+	[Rli] xml NULL
+)
+GO
+ALTER TABLE [cust].[tblRli] 
+ ADD CONSTRAINT [PK_tblRli]
+	PRIMARY KEY CLUSTERED ([RLIID] ASC)

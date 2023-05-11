@@ -1,0 +1,1 @@
+create database ace_snapshot on (name = 'ace', filename = 'c:\project_files\ace.ss') as snapshot of ace;

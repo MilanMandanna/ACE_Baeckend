@@ -1,0 +1,10 @@
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\bin\Release\netcoreapp3.1\backend.Logging.deps.json
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\bin\Release\netcoreapp3.1\backend.Logging.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\bin\Release\netcoreapp3.1\backend.Logging.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.AssemblyInfoInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.AssemblyInfo.cs
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.csproj.CoreCompileInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Logging\obj\Release\netcoreapp3.1\backend.Logging.csproj.AssemblyReference.cache

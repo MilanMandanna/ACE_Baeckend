@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = backend.Test
+build_property.ProjectDir = C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Test\

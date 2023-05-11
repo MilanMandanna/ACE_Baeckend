@@ -1,0 +1,28 @@
+{
+  "Configuration": {
+    "ConnectionString": "Server=tcp:rcprodsqldb.database.windows.net,1433;Initial Catalog=rcprodsqldb;Persist Security Info=False;User ID=rcstageprod;Password=6pXS_9KSL5;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=600;",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=aceblobstroage;AccountKey=7jht9qTpUFdqKEYhyFThepBD5w+1xu8GegFACsOsZXL4jwkc3o6MPKkFAZXC4P/slHnjWCOxrybP7TV5zhCQHw==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsQueue": "queue-prod-worker",
+    "AzureExportBlobStorage": "DefaultEndpointsProtocol=https;AccountName=aceblobstroage;AccountKey=7jht9qTpUFdqKEYhyFThepBD5w+1xu8GegFACsOsZXL4jwkc3o6MPKkFAZXC4P/slHnjWCOxrybP7TV5zhCQHw==;EndpointSuffix=core.windows.net",
+    "AzureExportBlobStorageContainer": "aceexport",
+    "AzureImportBlobStorageContainer": "aceimport",
+    "AzureBlobStorageContainerforCustomContents": "configuration-components",
+    "AzureBlobStorageContainerforHiFocusMapInsets": "highfocusmapinsets",
+    "AzureBlobStorageContainerforImages": "images",
+    "AzureBlobStorageContainerforCollinsAdminAssets": "collins-admin-assets",
+    "AzureBlobStorageContainerforVersionUpdates": "version-updates",
+    "AzureFileUploadPath": "",
+    "AzureBlobUrl": "",
+    "IntervalTimeForCheckQueuedLockConfig": 5,
+    "ConfigUpdatesWaitingTimeBeforeLock": 60,
+    "TokenIssuer": "https://id.stage.rockwellcollins.com",
+    "TokenApi": "https://dev-id.stage-dev.net/token",
+    "TokenSecret": "pOPkM37qnchzKK7pnml2CyU5e16CX7VWLvkB8BdJXLv+DTCGI/mtS6mTP3IwjzbUh4P4UMsnClFpSgepda5OcA==",
+    "TokenAudience": "all",
+    "TokenValidateLifetime": "false",
+    "LocalTempStorageRoot": ""
+  },
+  "ConnectivityTypes": {
+    "Name": "Value"
+  }
+}

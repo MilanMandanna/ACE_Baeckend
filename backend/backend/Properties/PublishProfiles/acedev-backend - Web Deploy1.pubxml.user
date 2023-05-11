@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhZ5aBO+3c06dlOVW5wS+WAAAAAACAAAAAAADZgAAwAAAABAAAACCLH/ZTAhW8V1nqTMsekn0AAAAAASAAACgAAAAEAAAAKoYUNq/4urIklSBwoY7PmmAAAAAGvcUxHCT+2rNYHLBpsYwbfCO3Fh7LpvpDTrZE/hSf1Nejq5aWHB4OOwqXuaOZFnpvYKADu5g0DsNhKy6sBMg/5ggp/OMvCQ+4NPGhK/4oc01SZN7zJzNG4P2SbppciV6F4gHZANm+h8pTkp0aqhKr1gVTExzbjsbMEzT+x6PQiAUAAAAAhRIynsZQ2wjy35rGzGeGWvJmOo=</EncryptedPassword>
+    <History>True|2023-04-12T06:21:42.3577702Z;True|2023-04-12T11:24:58.8390692+05:30;True|2023-04-12T10:45:06.2663434+05:30;True|2023-04-05T15:41:59.7023982+05:30;False|2023-04-05T15:39:37.7401763+05:30;False|2023-04-05T15:37:08.2706831+05:30;False|2023-04-05T15:34:58.5402516+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:rcprodsqldb2.database.windows.net,1433;Initial Catalog=rcdevsqldb;User Id=rcstageprod@rcprodsqldb2;Password=6pXS_9KSL5" />
+    <AzureDBConnectionStrings Include="Data Source=tcp:stageacedev.database.windows.net,1433;Initial Catalog=acedev;User Id=rcstageprod@stageacedev;Password=6pXS_9KSL5" />
+  </ItemGroup>
+</Project>

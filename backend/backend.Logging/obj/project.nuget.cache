@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "cXk99OwIE7iyX/NFY6tGtkVXAZuGpMosJhI/qLbX6aCfJduYk+JCuVLc50oKAB6u9sdX2a6Z1ehFeAdiRAZBCA==",
+  "success": true,
+  "projectFilePath": "C:\\CodeBase\\ACE_Cloud\\trunk\\apps\\backend\\backend.Logging\\backend.Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.0\\microsoft.extensions.configuration.binder.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.logging\\3.0.0\\microsoft.extensions.logging.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\nlog.extensions.logging\\1.7.3\\nlog.extensions.logging.1.7.3.nupkg.sha512",
+    "C:\\Users\\E40012179\\.nuget\\packages\\nlog.web.aspnetcore\\4.13.0\\nlog.web.aspnetcore.4.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

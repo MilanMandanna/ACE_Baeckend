@@ -1,0 +1,8 @@
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\bin\Debug\backend.Database.dacpac
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\backend.Database.sqlproj.AssemblyReference.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\Model.xml
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\refactor.xml
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\postdeploy.sql
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\predeploy.sql
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\backend.Database.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Database\obj\Debug\backend.Database.pdb

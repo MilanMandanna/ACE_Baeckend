@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "backend.Worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "backend.Worker LocalDevelopment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "LocalDevelopment"
+      }
+    }
+  }
+}

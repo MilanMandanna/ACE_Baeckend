@@ -1,0 +1,28 @@
+{
+  "Configuration": {
+    "ConnectionString": "Data Source=tcp:stageqa2.database.windows.net,1433;Initial Catalog=productioncopy;User Id=rcstageprod;Password=6pXS_9KSL5",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=acedevstorage;AccountKey=63jHdNuJltrplrcTjhY/WpKXM5QLl6IidBdJExodyYdgClIlDfzjX/2hFvm1ipJarbkatKy18db0V67lR/nGjw==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsQueue": "queue-qa-worker",
+    "AzureExportBlobStorage": "DefaultEndpointsProtocol=https;AccountName=acedevstorage;AccountKey=63jHdNuJltrplrcTjhY/WpKXM5QLl6IidBdJExodyYdgClIlDfzjX/2hFvm1ipJarbkatKy18db0V67lR/nGjw==;EndpointSuffix=core.windows.net",
+    "AzureExportBlobStorageContainer": "builds-qa-worker",
+    "AzureImportBlobStorageContainer": "inputs",
+    "AzureBlobStorageContainerforCustomContents": "configuration-components",
+    "AzureBlobStorageContainerforHiFocusMapInsets": "hi-focus-mapinsets",
+    "AzureBlobStorageContainerforImages": "images",
+    "AzureBlobStorageContainerforCollinsAdminAssets": "collins-admin-assets",
+    "AzureBlobStorageContainerforVersionUpdates": "version-updates",
+    "AzureFileUploadPath": "https://acedevstorage.blob.core.windows.net/collins-admin-assets/",
+    "AzureBlobUrl": "https://acedevstorage.blob.core.windows.net/",
+    "TokenIssuer": "https://id.qa.stage.rockwellcollins.com",
+    "TokenApi": "https://dev-id.stage-dev.net/token",
+    "TokenSecret": "pOPkM37qnchzKK7pnml2CyU5e16CX7VWLvkB8BdJXLv+DTCGI/mtS6mTP3IwjzbUh4P4UMsnClFpSgepda5OcA==",
+    "TokenAudience": "all",
+    "TokenValidateLifetime": "false",
+    "IntervalTimeForCheckQueuedLockConfig": 5,
+    "ConfigUpdatesWaitingTimeBeforeLock": 60,
+    "LocalTempStorageRoot": ""
+  },
+  "ConnectivityTypes": {
+    "Name": "Value"
+  }
+}

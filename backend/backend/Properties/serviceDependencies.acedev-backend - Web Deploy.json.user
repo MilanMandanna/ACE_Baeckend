@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "restored": true,
+      "restoreTime": "2021-10-13T15:17:45.4031856Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2022-07-14T14:38:36.3418183Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "18903967-e2b7-4ad1-9743-c7c41365b4d4"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "RC-Stage-Dev"
+    }
+  }
+}

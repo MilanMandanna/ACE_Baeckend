@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>backend.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{dfca462a-fa8c-4aa6-8ca4-3c7fe5430947}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>backend.Database</RootNamespace>
+    <AssemblyName>backend.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <DelayedDurability>FORCED</DelayedDurability>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="cust\" />
+    <Folder Include="cust\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="cust\Stored Procedures\" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="cust\Functions" />
+    <Folder Include="dbo\Table Types" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Aircraft.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\DownloadPreference.sql" />
+    <Build Include="dbo\Tables\DownloadPreferenceAssignment.sql" />
+    <Build Include="dbo\Tables\InstallationTypes.sql" />
+    <Build Include="dbo\Tables\Msu.sql" />
+    <Build Include="dbo\Tables\MsuConfigurations.sql" />
+    <Build Include="dbo\Tables\Operator.sql" />
+    <Build Include="dbo\Tables\tblAircraftConfigurationMapping.sql" />
+    <Build Include="dbo\Tables\tblAircraftDestinations.sql" />
+    <Build Include="dbo\Tables\tblAircraftDocumentFolders.sql" />
+    <Build Include="dbo\Tables\tblAirportInfo.sql" />
+    <Build Include="dbo\Tables\tblAirportInfoMap.sql" />
+    <Build Include="dbo\Tables\tblAirshowSubscriptionAssignment.sql" />
+    <Build Include="dbo\Tables\tblAppearance.sql" />
+    <Build Include="dbo\Tables\tblAppearanceMap.sql" />
+    <Build Include="dbo\Tables\tblArea.sql" />
+    <Build Include="dbo\Tables\tblAreaMap.sql" />
+    <Build Include="dbo\Tables\tblASXiInset.sql" />
+    <Build Include="dbo\Tables\tblASXiInsetMap.sql" />
+    <Build Include="dbo\Tables\tblAsxiProfile.sql" />
+    <Build Include="dbo\Tables\tblAsxiProfileMap.sql" />
+    <Build Include="dbo\Tables\tblAsxiWorldGuideText.sql" />
+    <Build Include="dbo\Tables\tblAsxiWorldGuideTextMap.sql" />
+    <Build Include="dbo\Tables\tblCategoryType.sql" />
+    <Build Include="dbo\Tables\tblCityPopulation.sql" />
+    <Build Include="dbo\Tables\tblCityPopulationMap.sql" />
+    <Build Include="dbo\Tables\tblConfigurationComponents.sql" />
+    <Build Include="dbo\Tables\tblConfigurationComponentsMap.sql" />
+    <Build Include="dbo\Tables\tblConfigurationComponentType.sql" />
+    <Build Include="dbo\Tables\tblConfigurationDefinitions.sql" />
+    <Build Include="dbo\Tables\tblConfigurations.sql" />
+    <Build Include="dbo\Tables\tblConfigurationTypes.sql" />
+    <Build Include="cust\Tables\tblConfigVersion.sql" />
+    <Build Include="cust\Tables\tblConfigVersionMap.sql" />
+    <Build Include="dbo\Tables\tblCountry.sql" />
+    <Build Include="dbo\Tables\tblCountryMap.sql" />
+    <Build Include="dbo\Tables\tblCountrySpelling.sql" />
+    <Build Include="dbo\Tables\tblCountrySpellingMap.sql" />
+    <Build Include="dbo\Tables\tblCoverageSegment.sql" />
+    <Build Include="dbo\Tables\tblCoverageSegmentMap.sql" />
+    <Build Include="dbo\Tables\tblElevation.sql" />
+    <Build Include="dbo\Tables\tblElevationMap.sql" />
+    <Build Include="dbo\Tables\tblFeatureSet.sql" />
+    <Build Include="dbo\Tables\tblFleetConfigurationMapping.sql" />
+    <Build Include="dbo\Tables\tblFleets.sql" />
+    <Build Include="cust\Tables\tblFlyOverAlert.sql" />
+    <Build Include="cust\Tables\tblFlyOverAlertMap.sql" />
+    <Build Include="dbo\Tables\tblFont.sql" />
+    <Build Include="dbo\Tables\tblFontCategory.sql" />
+    <Build Include="dbo\Tables\tblFontCategoryMap.sql" />
+    <Build Include="dbo\Tables\tblFontDefaultCategory.sql" />
+    <Build Include="dbo\Tables\tblFontDefaultCategoryMap.sql" />
+    <Build Include="dbo\Tables\tblFontFamily.sql" />
+    <Build Include="dbo\Tables\tblFontFamilyMap.sql" />
+    <Build Include="dbo\Tables\tblFontFiles.sql" />
+    <Build Include="dbo\Tables\tblFontFileSelection.sql" />
+    <Build Include="dbo\Tables\tblFontFileSelectionMap.sql" />
+    <Build Include="dbo\Tables\tblFontFilesMap.sql" />
+    <Build Include="dbo\Tables\tblFontMap.sql" />
+    <Build Include="dbo\Tables\tblFontMarker.sql" />
+    <Build Include="dbo\Tables\tblFontMarkerMap.sql" />
+    <Build Include="dbo\Tables\tblFontTextEffect.sql" />
+    <Build Include="dbo\Tables\tblFontTextEffectMap.sql" />
+    <Build Include="dbo\Tables\tblGeoRef.sql" />
+    <Build Include="dbo\Tables\tblGeoRefMap.sql" />
+    <Build Include="cust\Tables\tblGlobal.sql" />
+    <Build Include="dbo\Tables\tblGlobalConfigurationMapping.sql" />
+    <Build Include="cust\Tables\tblGlobalMap.sql" />
+    <Build Include="dbo\Tables\tblGlobals.sql" />
+    <Build Include="cust\Tables\tblHandSet.sql" />
+    <Build Include="cust\Tables\tblHandSetMap.sql" />
+    <Build Include="dbo\Tables\tblHistory.sql" />
+    <Build Include="cust\Tables\tblHtml5.sql" />
+    <Build Include="cust\Tables\tblHtml5Map.sql" />
+    <Build Include="dbo\Tables\tblInfoSpelling.sql" />
+    <Build Include="dbo\Tables\tblInfoSpellingMap.sql" />
+    <Build Include="dbo\Tables\tblIpadConfig.sql" />
+    <Build Include="dbo\Tables\tblIpadConfigMap.sql" />
+    <Build Include="dbo\Tables\tblLanguages.sql" />
+    <Build Include="dbo\Tables\tblLanguagesMap.sql" />
+    <Build Include="cust\Tables\tblMakkah.sql" />
+    <Build Include="cust\Tables\tblMakkahMap.sql" />
+    <Build Include="dbo\Tables\tblMapInsets.sql" />
+    <Build Include="dbo\Tables\tblMapInsetsMap.sql" />
+    <Build Include="cust\Tables\tblMaps.sql" />
+    <Build Include="cust\Tables\tblMapsMap.sql" />
+    <Build Include="cust\Tables\tblMenu.sql" />
+    <Build Include="cust\Tables\tblMenuMap.sql" />
+    <Build Include="dbo\Tables\tblMetroMapGeoRefs.sql" />
+    <Build Include="dbo\Tables\tblMetroMapGeoRefsMap.sql" />
+    <Build Include="cust\Tables\tblMiqat.sql" />
+    <Build Include="cust\Tables\tblMiqatMap.sql" />
+    <Build Include="cust\Tables\tblModeDefs.sql" />
+    <Build Include="cust\Tables\tblModeDefsMap.sql" />
+    <Build Include="cust\Tables\tblNews.sql" />
+    <Build Include="cust\Tables\tblNewsMap.sql" />
+    <Build Include="dbo\Tables\tblOutputTypes.sql" />
+    <Build Include="cust\Tables\tblPersonalityList.sql" />
+    <Build Include="cust\Tables\tblPersonalityListMap.sql" />
+    <Build Include="dbo\Tables\tblPlatformConfigurationMapping.sql" />
+    <Build Include="dbo\Tables\tblPlatforms.sql" />
+    <Build Include="dbo\Tables\tblProductConfigurationMapping.sql" />
+    <Build Include="dbo\Tables\tblProducts.sql" />
+    <Build Include="dbo\Tables\tblProductType.sql" />
+    <Build Include="dbo\Tables\tblRegionSpelling.sql" />
+    <Build Include="dbo\Tables\tblRegionSpellingMap.sql" />
+    <Build Include="cust\Tables\tblResolution.sql" />
+    <Build Include="cust\Tables\tblResolutionMap.sql" />
+    <Build Include="cust\Tables\tblRli.sql" />
+    <Build Include="cust\Tables\tblRLIMap.sql" />
+    <Build Include="dbo\Tables\tblScreenSize.sql" />
+    <Build Include="dbo\Tables\tblScreenSizeMap.sql" />
+    <Build Include="cust\Tables\tblScriptDefs.sql" />
+    <Build Include="cust\Tables\tblScriptDefsMap.sql" />
+    <Build Include="dbo\Tables\tblSpelling.sql" />
+    <Build Include="dbo\Tables\tblSpellingMap.sql" />
+    <Build Include="dbo\Tables\tblSpellingPoiPanel.sql" />
+    <Build Include="dbo\Tables\tblSpellingPoiPanelMap.sql" />
+    <Build Include="dbo\Tables\tblSubscription.sql" />
+    <Build Include="dbo\Tables\tblSubscriptionFeature.sql" />
+    <Build Include="dbo\Tables\tblSubscriptionFeatureAssignment.sql" />
+    <Build Include="dbo\Tables\tblTaskData.sql" />
+    <Build Include="dbo\Tables\tblTaskDataType.sql" />
+    <Build Include="dbo\Tables\tblTasks.sql" />
+    <Build Include="dbo\Tables\tblTaskStatus.sql" />
+    <Build Include="dbo\Tables\tblTaskType.sql" />
+    <Build Include="cust\Tables\tblTicker.sql" />
+    <Build Include="cust\Tables\tblTickerMap.sql" />
+    <Build Include="cust\Tables\tblTimeZoneGlobePlaceNames.sql" />
+    <Build Include="cust\Tables\tblTimeZoneGlobePlaceNamesMap.sql" />
+    <Build Include="dbo\Tables\tblTimeZoneStrip.sql" />
+    <Build Include="dbo\Tables\tblTimeZoneStripMap.sql" />
+    <Build Include="cust\Tables\tblTrigger.sql" />
+    <Build Include="cust\Tables\tblTriggerMap.sql" />
+    <Build Include="cust\Tables\tblTzPois.sql" />
+    <Build Include="cust\Tables\tblTzPoisMap.sql" />
+    <Build Include="dbo\Tables\tblUserClaims.sql" />
+    <Build Include="dbo\Tables\tblUserRoleAssignments.sql" />
+    <Build Include="dbo\Tables\tblUserRoleClaims.sql" />
+    <Build Include="dbo\Tables\tblUserRoles.sql" />
+    <Build Include="dbo\Tables\tblUSStates.sql" />
+    <Build Include="dbo\Tables\tblUSStatesMap.sql" />
+    <Build Include="cust\Tables\tblWebMain.sql" />
+    <Build Include="cust\Tables\tblWebMainMap.sql" />
+    <Build Include="dbo\Tables\tblWGContent.sql" />
+    <Build Include="dbo\Tables\tblWGContentMap.sql" />
+    <Build Include="dbo\Tables\tblWGImage.sql" />
+    <Build Include="dbo\Tables\tblWGImageMap.sql" />
+    <Build Include="dbo\Tables\tblWGtext.sql" />
+    <Build Include="dbo\Tables\tblWGtextMap.sql" />
+    <Build Include="dbo\Tables\tblWGType.sql" />
+    <Build Include="dbo\Tables\tblWGTypeMap.sql" />
+    <Build Include="cust\Tables\tblWorldClockCities.sql" />
+    <Build Include="cust\Tables\tblWorldClockCitiesMap.sql" />
+    <Build Include="cust\Tables\tblWorldMapCities.sql" />
+    <Build Include="cust\Tables\tblWorldMapCitiesMap.sql" />
+    <Build Include="cust\Tables\tblWorldMapPlaceNames.sql" />
+    <Build Include="cust\Tables\tblWorldMapPlaceNamesMap.sql" />
+    <Build Include="cust\Tables\tblWorldTimeZonePlaceNames.sql" />
+    <Build Include="cust\Tables\tblWorldTimeZonePlaceNamesMap.sql" />
+    <Build Include="cust\Stored Procedures\SP_Trigger_Add.sql" />
+    <Build Include="cust\Stored Procedures\SP_Trigger_Delete.sql" />
+    <Build Include="cust\Stored Procedures\SP_Trigger_Get.sql" />
+    <Build Include="cust\Stored Procedures\SP_Trigger_GetAll.sql" />
+    <Build Include="cust\Stored Procedures\SP_Trigger_New.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AddNewConfigurationComponent.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AddNewConfigurationView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_CopyRecord.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_FindMappingBetween.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_GetTableSchema.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_HandleAdd.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_HandleDelete.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_HandleUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CopyConfigurationDefinition.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CreateBranch.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CreateConfigurationDefinition.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CreateTask.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetMappedConfigurationRecords.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetPendingTasks.sql" />
+    <Build Include="dbo\Stored Procedures\SP_PurgeConfigurationDefinition.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateTask.sql" />
+    <Build Include="cust.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Compass_GetAvailableAircraftAndLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_FlightInfo_GetAvailableFlightInfoParameters.sql" />
+    <Build Include="dbo\Stored Procedures\SP_FlightInfo_GetFlightInfoParameters.sql" />
+    <Build Include="dbo\Stored Procedures\SP_FlightInfo_MoveFlightInfoLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Makkah_GetMakkahLocations.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Makkah_GetMakkahPrayerTimes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Timezone_GetAvailableTimeoneLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Timezone_UpdateTimezoneLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Views_DisableSelectedView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Views_GetAllViewDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Views_GetLocationForSelectedView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Views_MoveSelectedView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Views_UpdateSelectedView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_WorldClock_AddAlternateWorldClockCity.sql" />
+    <Build Include="dbo\Stored Procedures\SP_WorldClock_GetAvailableAndAlternateWorldClockLocations.sql" />
+    <Build Include="dbo\Stored Procedures\SP_WorldClock_MoveWorldclockLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_WorldClock_UpdateWorldclockLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Maps_GetConfigurations.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Maps_GetLayers.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Maps_UpdateSectionData.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_addmode.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_addmodeitem.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_getallmodes.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_getmaxmodedefid.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_getmaxmodeid.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_getmode.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_getmodeitemcount.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_insertmode.sql" />
+    <Build Include="dbo\Stored Procedures\sp_mode_removemode.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_addupdatetickerparam.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_getalltickerparam.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_getinfoitems.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_getselectedtickerparam.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_getticker.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_gettickercount.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_istickeritemdisabled.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_removetickerparam.sql" />
+    <Build Include="cust\Stored Procedures\SP_Inset_InsertInsetsIntoASXiInsetMap.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Config_UpdateAutoLockorAutoDeploy.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_GetDefaultLockingComments.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Feature_GetFeatures.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Compass_GetCompassColors.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Compass_UpdateCompassLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Compass_GetMakkahImageTextValues.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CityPopulation_Import.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_MergeConfig.sql" />
+    <Build Include="dbo\Tables\tblConfigTables.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Timezone_ColorsData.sql" />
+    <Build Include="dbo\Tables\tblNavDBAirports.sql" />
+    <Build Include="dbo\Tables\tblConfigurationHistory.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Makkah_GetMakkahData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_GetNames.sql" />
+    <Build Include="cust\Stored Procedures\SP_GetXML.sql" />
+    <Build Include="dbo\Tables\tblImageType.sql" />
+    <Build Include="dbo\Tables\tblImageres.sql" />
+    <Build Include="dbo\Tables\tblImage.sql" />
+    <Build Include="dbo\Tables\tblImageResSpec.sql" />
+    <Build Include="dbo\Tables\tblImageMap.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_DeleteImage.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_GetConfigImages.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_GetImageDetails.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_InsertImages.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_InsertResolutionSpecImage.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_GetResolutions.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_ReSetConfigImage.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_SetConfigImage.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_GetImageCount.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_PreviewImages.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_UpdateResolutionSpecImage.sql" />
+    <Build Include="dbo\Stored Procedures\sp_image_management_RenameFile.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Admin_GetAdminItemsAndDownloadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_GetInfo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_AddAirport.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_UpdateAirport.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_AddAirport.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_Add.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_AddCountryDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_UpdateDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_GetDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Region_Add.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Region_UpdateDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Region_GetDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UploadFilesErrorLogs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Region_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Global_GetSelectedLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ticker_update.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScriptItems.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_SetDefaultLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Subscription_Find.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetBuildTasks.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetClaims_UserId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetClaims_RoleId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Getuserby_Object.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetUserByRoleId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveRoleAssignment_Userid.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveRole_Userid.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetCountbyuser_RoleId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetClaimsforuser_Aircraftconfig.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScopeValueForUser.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Getscopevalue_Claims.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetUserRoleClaimsby_RoleclaimId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetUserRoleClaims.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetClaimsCountByRoleId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetRolesByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScopeValueForUserinput.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFlightInfoViewParam.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateXML.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_UpdateLanguageSetElements.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateFontSelectionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\SP_XmlInsertSaveScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_GetSelectLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_XmlSaveScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_FlightInfoViewUpdateParameters.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GlobalRemoveLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MsuGetAll.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveScriptDefs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScriptItemsByScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveSCriptItems.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveScriptItems.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SetFlightInfoViewForItem.sql" />
+    <Build Include="dbo\Stored Procedures\SP_FlightInfo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFlightInfoViewParameters.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFlightInfoView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetSelectLangOverride.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetLanguagesOverride.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScriptItemTypes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateOldLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_script_OldLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_script_ScriptDef.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MaxScriptIdDefs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MaxScriptId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_script_GetLang.sql" />
+    <Build Include="dbo\Stored Procedures\SP_script_GetForcedLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetForcedLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetScripts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MsuFindAll.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MsuFind.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_AddLanguagesCode.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_UpdateLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_AddLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_GetAllLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFonts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFontSelectionMappingCount.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFontSelectionIdForFont.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAircraftDownloadPreferenceId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAircraftDownloadPreferences.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetConnectivityTypes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_script_SaveScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveScript.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetByNameForDownloadPreference.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAllDownloadPreference.sql" />
+    <Build Include="dbo\Stored Procedures\SP_RemoveForcedLang.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_AddLanguagesCodeIsnullOrWhiteSpace.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateFileUploadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetDownloadURL.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_UpdateReleaseNotes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_GetIfExist.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_GetVersions.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_Utility.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_DefinitionInfo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetAircrafts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetOperators.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetDefinition.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetDefinitions.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Aircraft_Find.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Aircraft_GetOperators.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Aircraft_GetProducts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_GetAircrafts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_image_management_GetResolutionText.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInset_GetCities.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInset_UpdateCity.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIds.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXInfoLatLon.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIdsPnameTriviaUS.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIdsPnameTriviaNonUS.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIdsArea.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIdsElevation.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000GeoRefIdsPopulation.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dGeoRefIds.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dGeoRefIdCategoryType.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dGeoRefIdTbTzStrip.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportCESHTSEGeoRefIds.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXInfoAppearance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXInfoTimezoneStrips.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000AirportInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dAirportInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportCESHTSEAirportInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportThalesAirportInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000Appearance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000AppearanceResolution6.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dAppearance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportCESHTSEAppearance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000Languages.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXi3DLanguages.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetAS4000CountrySpellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetASXI3dCountryData.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetAS4000CoverageSegments.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetASXI3dCoverageSegments.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetCESHTSECoverageSegments.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportAS4000Spellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportCESHTSESpellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportCESHTSESpellingsTrivia.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportDataAS4000DestinationSpelling.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportThalesPNameTriva.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportThalesSpellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dRegionSpelling.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFileIDFromTaskID.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_getplacenames.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_getplacenamespelling.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_getcattypes.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_getvisibility.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_insert_update_spelling.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_insert_update_appearance.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_insert_update_coverageseg.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_insertupdategeoref.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_updatecattype.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_getplacenameinfo.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblAirportInfo.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblCountrySpelling.sql" />
+    <Build Include="dbo\Functions\config_tblCoverageSegment.sql" />
+    <Build Include="dbo\Functions\config_tblLanguage.sql" />
+    <Build Include="dbo\Functions\config_tblappearance.sql" />
+    <Build Include="dbo\Functions\FN_GetCatValuesBasedOnASXICatValues.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblASXiInset.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblConfigurationComponents.sql" />
+    <Build Include="dbo\Stored Procedures\SP_global_UpdateLanguageSetElementsAttributes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetSelectLangOverrideCombinedString.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Script_CountFlightInfoAddView.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Script_SetForcedLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getConfigIdsToBeLocked.sql" />
+    <Build Include="dbo\Stored Procedures\SP_updateTaskStatus.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_SetLastUpdateDateTime.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_Get.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_GetErrorLog.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_GetProgress.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getVenueNextArtifacts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_UpdatePartNumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_DefaultPartNumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_PartNumber.sql" />
+    <Build Include="dbo\Functions\config_tblRegion.sql" />
+    <Build Include="dbo\Functions\config_tblGeoRef.sql" />
+    <Build Include="dbo\Functions\config_tblImage.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Country_UpdateCountrySpelling.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Compass_RliXML.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CheckAndCreateTicker.sql" />
+    <Build Include="cust\Functions\cust.config_tblFlyOverAlert.sql" />
+    <Build Include="cust\Functions\cust.config_tblMakkah.sql" />
+    <Build Include="cust\Functions\cust.config_tblMaps.sql" />
+    <Build Include="cust\Functions\cust.config_tblMenu.sql" />
+    <Build Include="cust\Functions\cust.config_tblRLI.sql" />
+    <Build Include="cust\Functions\cust.config_tblWebmain.sql" />
+    <Build Include="cust\Functions\cust.config_tblWorldClockCities.sql" />
+    <Build Include="cust\Functions\cust.config_tblWorldMapPlaceNames.sql" />
+    <Build Include="cust\Functions\cust.config_tblWorldTimeZonePlaceNames.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetASXiInsets.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetUpdatesAvailable.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConflict_MoveDataToMapTable.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetVersionUpdates.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetUpdatedColumns.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConfiguration_PopulateMergeDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getPlaceNameConflicts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getRegionConflicts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConflicts_GetConflictData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getAirportConflicts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConflicts_UpdateSelection.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConflict_SetConfigUpdatedVersion.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConfiguration_MergeConflictCount.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetMergeConfigurationTaskData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetDownloadPreferencesOfType.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Insets_Add.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getPlaceNameUpdates.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAirportUpdates.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getCountryUpdates.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetRegionUpdates.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetPartNumberCollectionId.sql" />
+    <Build Include="dbo\Stored Procedures\sp_infoSpelling_getInfoSpelling.sql" />
+    <Build Include="dbo\Stored Procedures\sp_infoSpelling_insertupdateInfoSpelling.sql" />
+    <Build Include="dbo\Functions\config_tblInfoSpelling.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportSpellings.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigurationDefinition_GetInstallationTypesOrOutputTypes.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveProductData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Airport_GetCityInfo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_AirportInfo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_Country.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_font.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_FontCategory.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_FontFamily.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_FontMarker.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_GeoRef.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_Language.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_InfoSpelling.sql" />
+    <Build Include="dbo\Stored Procedures\SP_AsxiInfoImport_Region.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_Cancel.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Build_GetActiveImportStatus.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ConfigManagement_CheckMappingTable.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_BranchConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_GetAllChlildConfigs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_LockChildConfigurations.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Configuration_LockCurrentConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getConfigComponentsArtifacts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_getCountryConflicts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetDataForModListJson.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetExportAS4000FourLetter.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFileUploadErrorLogs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetLandSatValue.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetModlistData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetRoleClaim_Mapuser.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetTriggers.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Globalconfig_Respo.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Makkah_UpdateMakkahLocationAndPrayerTimeLocation.sql" />
+    <Build Include="dbo\Stored Procedures\SP_MergeConfig_GetUpdatesDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_NewNavDBAirports_Import.sql" />
+    <Build Include="dbo\Stored Procedures\SP_NewPlaceNames_Import.sql" />
+    <Build Include="dbo\Stored Procedures\SP_NewWGCities_Import.sql" />
+    <Build Include="dbo\Stored Procedures\sp_placenames_GetLatLonValue.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Region_AddRegionDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveProductConfigurationData.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SetIsDirty.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UpdateModlistData.sql" />
+    <Build Include="dbo\Table Types\ModListTable.sql" />
+    <Build Include="dbo\Table Types\Type_ModListJson.sql" />
+    <Build Include="dbo\Table Types\Type_PlatformData.sql" />
+    <Build Include="dbo\Functions\config_tblCountry.sql" />
+    <Build Include="dbo\Functions\dbo.config_RegionSpelling.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblFontMarker.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblFonts.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblSpelling.sql" />
+    <Build Include="dbo\Functions\FN_GetModListValues.sql" />
+    <Build Include="dbo\Functions\SplitString.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAllFeatureSet.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveFeatureSet.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetPartnumberId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveExtractedPartnumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SetTopLevelPartnumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetPartnumberId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SaveExtractedPartnumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SetTopLevelPartnumber.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXInfoGeoRefSpellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetAllCountrySpellings.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportWGCitiesForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportWGTypeForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportWGContentForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontTextEffectForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontMarkerForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontFamilyForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontDefaultCategoryForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontCategoryForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetProductExport.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportScreenSizeForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportWGTextForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportWGImageForConfig.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetLatestConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetMenus_UserId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Default_PartNumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetToplevelPartNumber.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetPartNumberCollection.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetTask_Status.sql" />
+    <Build Include="dbo\Stored Procedures\sp_update_partnumer_from_temp.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Import_FontFamily.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Import_font.sql" />
+    <Build Include="dbo\Stored Procedures\SP_InfoImportFonts.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Import_FontMarker.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Import_FontCategory.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Maps_GetProductLevelConfigDetails.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblInfoSpelling.sql" />
+    <Build Include="dbo\Functions\dbo.config_tblFontFamily.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetFontInfoForLangugaeId.sql" />
+    <Build Include="dbo\Stored Procedures\SP_InfoSpelling_Import.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Language_GetTwoLetterCode.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontCategoryForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontDefaultCategoryForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontFamilyForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontMarkerForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportFontTextEffectForConfigPAC3D.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Insert_Updaye_AeroplanTypes.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetExportASXI3dGeoRefIdsFiltered.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="backend.Database.refactorlog" />
+  </ItemGroup>
+</Project>

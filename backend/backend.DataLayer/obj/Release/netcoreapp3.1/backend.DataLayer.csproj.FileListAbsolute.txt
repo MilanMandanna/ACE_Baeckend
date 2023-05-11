@@ -1,0 +1,17 @@
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\x64\7z.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\x86\7z.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.DataLayer.deps.json
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.DataLayer.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.DataLayer.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.Helpers.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.Logging.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.Helpers.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\bin\Release\netcoreapp3.1\backend.Logging.pdb
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.csproj.AssemblyReference.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.AssemblyInfoInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.AssemblyInfo.cs
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.csproj.CoreCompileInputs.cache
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.csproj.CopyComplete
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.dll
+C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.DataLayer\obj\Release\netcoreapp3.1\backend.DataLayer.pdb
