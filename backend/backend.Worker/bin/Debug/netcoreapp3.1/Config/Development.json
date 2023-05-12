@@ -1,0 +1,26 @@
+{
+  "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=acedevstorage;AccountKey=63jHdNuJltrplrcTjhY/WpKXM5QLl6IidBdJExodyYdgClIlDfzjX/2hFvm1ipJarbkatKy18db0V67lR/nGjw==;EndpointSuffix=core.windows.net",
+  "AzureBlobStorage": "DefaultEndpointsProtocol=https;AccountName=acedevstorage;AccountKey=63jHdNuJltrplrcTjhY/WpKXM5QLl6IidBdJExodyYdgClIlDfzjX/2hFvm1ipJarbkatKy18db0V67lR/nGjw==;EndpointSuffix=core.windows.net",
+  "AzureBlobStorageContainer": "builds",
+  "AzureImportBlobStorageContainer": "inputs",
+  "AzureBlobStorageContainerforCustomContents": "configuration-components",
+  "AzureBlobStorageContainerforCollinsAdminAssets": "collins-admin-assets",
+  "AzureBlobStorageContainerforHiFocusMapInsets": "hi-focus-mapinsets",
+  "AzureBlobStorageContainerforVersionUpdates": "version-updates",
+  "JavaPath": "C:\\Program Files\\Java\\jdk-17\\bin",
+  "WebjobQueueName": "queue",
+  "Configuration": {
+    "ConnectionString": "Data Source=tcp:stageqa2.database.windows.net,1433;Initial Catalog=productioncopy;User Id=rcstageprod;Password=6pXS_9KSL5",
+    "LocalAssetPath": "assets"
+
+  },
+  "LocalTempStorageRoot": "c:\\project_files\\ace-temp\\",
+  "DOTNET_ENVIRONMENT": "Development",
+
+  "ConnectivityTypes": {
+    "Name": "Value"
+  },
+  "AzureFileUploadPath": "https://acedevstorage.blob.core.windows.net/collins-admin-assets/",
+  "AzureBlobUrl": "https://acedevstorage.blob.core.windows.net/",
+  "CygwinPath": "Cygwin"
+}
