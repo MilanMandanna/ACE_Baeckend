@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <_LastSelectedProfileId>C:\CodeBase\ACE_Cloud\trunk\apps\backend\backend.Worker\Properties\PublishProfiles\acedev-backend - Web Deploy.pubxml</_LastSelectedProfileId>
-    <ShowAllFiles>true</ShowAllFiles>
-  </PropertyGroup>
-</Project>
